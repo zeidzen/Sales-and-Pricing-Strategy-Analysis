@@ -7,7 +7,7 @@ This repository contains code and resources for forecasting weekly sales, analyz
 
 **This comprehensive dataset comprises three distinct datasets: Items, PriceAdjustments, and SampleSales, collectively providing vital information for conducting a detailed analysis of a leading UK grocery retailer's sales and pricing strategies. Each dataset is stored in a separate file, streamlining access and analysis.**
 
-&gt; **SampleSales File (Weekly Sales Data):**
+> **SampleSales File (Weekly Sales Data):**
 This file contains detailed weekly sales data covering the years 2018 and 2019. It contains the following fields:
 
 - ItemID: Unique identifier for each item.
@@ -26,8 +26,9 @@ This file contains detailed weekly sales data covering the years 2018 and 2019. 
 - SalesQuantity: Quantity of items sold.
 
 <br>
-&gt; **PriceAdjustment File (Historic Price Change Data):**
-This dataset offers insights into the historic price changes for each product, aiding in understanding pricing strategies over time. It includes the following fields:
+
+> **PriceAdjustment File (Historic Price Change Data):**
+This file offers insights into the historic price changes for each product, aiding in understanding pricing strategies over time. It includes the following fields:
 
 - ItemID: Unique identifier for each item.
 - Year: The year of the recorded data.
@@ -39,7 +40,8 @@ This dataset offers insights into the historic price changes for each product, a
 - NewBasePrice: Updated item base price.
 
 <br>
-&gt; **Items File (Item Hierarchy Information):**
+
+> **Items File (Item Hierarchy Information):**
 This file provides essential information about the product hierarchy, grouping products into logical categories for easier analysis and categorization. It contains the following fields:
 
 - ItemID: Unique identifier for each item.
