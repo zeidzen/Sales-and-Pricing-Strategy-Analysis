@@ -1,51 +1,54 @@
-# Sales-and-Pricing-Strategy-Analysis
+# **UK Grocery Retailer Sales and Pricing Analysis 🛒🛍️**
+
 This repository contains code and resources for forecasting weekly sales, analyzing the impact of pricing on sales, and providing pricing strategy recommendations for a UK grocery retailer.
 
 <img src="https://assets.epicurious.com/photos/57eebe2eb382c3c017d3fff0/16:9/w_2560%2Cc_limit/supermarket-shelves.jpg">
 
-# About Dataset 
 
-**This comprehensive dataset comprises three distinct sets of information vital for a detailed analysis of a leading UK grocery retailer's sales and pricing strategies. The dataset is provided in three distinct files:**
-> 1- **Sales_Small File (Weekly Sales Data)**
-This file encompasses weekly sales data spanning the years 2015 and 2016. It contains the following fields:
+**This comprehensive dataset comprises three distinct datasets: Items, PriceAdjustments, and SampleSales, collectively providing vital information for conducting a detailed analysis of a leading UK grocery retailer's sales and pricing strategies. Each dataset is stored in a separate file, streamlining access and analysis.**
 
-- Product ID
-- Channel (Online/Stores)
-- Country ID
-- Week key (Year and week number)
-- Original selling price (OSP)
-- Current selling price (CSP)
-- Sales volume
-- Total stock volume – representing the volume of stock in store, depot, future commitments, and intake stock at the end of the target week
-- Store stock volume – indicating the volume of stock in the store at the end of the target week
-- Depot stock volume – showing the volume of stock in the depot at the end of the target week
-- Future commitment volume – denoting stock quantities that have been ordered but not yet received in store or depot
-- Intake volume – representing stock quantities received from the supplier to the depot in the target week
-- % of stores with a stock count – indicating the proportion of total stores with a positive store stock count of the product in the associated week
-- % of stores with a sales count – representing the proportion of total stores with positive sales of the product in the associated week
+&gt; **SampleSales File (Weekly Sales Data):**
+This file contains detailed weekly sales data covering the years 2018 and 2019. It contains the following fields:
 
-> 2- **Price_Changes File (Historic Price Change Data)**
-This dataset provides information on historic price changes for each product. It includes the following fields:
+- ItemID: Unique identifier for each item.
+- Year: The year of the recorded data.
+- WeekIdentifier: Unique identifier for each week.
+- SalesChannel: Channel of sales (E-commerce, Stores).
+- Territory: Geographical sales region.
+- NewBasePrice: Updated item base price.
+- TotalInventory: Available item stock.
+- StoreInventory: Item stock in stores.
+- WarehouseInventory: Item stock in warehouses.
+- StockedStorePercentage: Percentage of item stock in stores.
+- ProjectedInventory: Estimated future inventory.
+- SellingStoresRatio: Ratio of stores selling the item.
+- InboundInventory: Expected incoming stock.
+- SalesQuantity: Quantity of items sold.
 
-- Product ID
-- Week key (Year and week number)
-- Channel (Online/Stores)
-- Country ID
-- Original selling price (OSP)
-- Price point before the most recent change
-- Current selling price (CSP)
+<br>
+&gt; **PriceAdjustment File (Historic Price Change Data):**
+This dataset offers insights into the historic price changes for each product, aiding in understanding pricing strategies over time. It includes the following fields:
+
+- ItemID: Unique identifier for each item.
+- Year: The year of the recorded data.
+- WeekIdentifier: Unique identifier for each week.
+- SalesChannel: Channel of sales (E-commerce, Stores).
+- Territory: Geographical sales region.
+- BasePrice: The original price of the item.
+- PrevBasePrice: The previous base price before any adjustments.
+- NewBasePrice: Updated item base price.
+
+<br>
+&gt; **Items File (Item Hierarchy Information):**
+This file provides essential information about the product hierarchy, grouping products into logical categories for easier analysis and categorization. It contains the following fields:
+
+- ItemID: Unique identifier for each item.
+- Period: Indicates the sales season.
+- Category: Broad item classification.
+- SubCategory: Specific item subCategory.
+- Type: Item type classification.
+- SubType: Sub-classification within item type.
 
 
-> 3- **Products File (Product Hierarchy Information)**
-This file offers crucial insights into the product hierarchy, categorizing products into logical groups. It contains the following fields:
-
-- Product ID
-- 0Season – representing one of two sales seasons: Autumn/Winter or Spring/Summer
-- Group
-- Subgroup
-- Class
-- Subclass
-
-**For instance, a product like a pair of trousers could be classified in the following hierarchy: Menswear (Group) &gt; Bottoms (Subgroup) &gt; Trousers (Class) &gt; Casual (Subclass).**
-
-These datasets collectively empower analysts to delve deep into the historical transactional data, allowing for accurate sales volume forecasts, pricing impact assessments, and strategic pricing recommendations. This comprehensive dataset serves as a valuable resource for understanding and optimizing sales performance in the UK grocery retail sector.
+----
+**These datasets collectively empower analysts to delve deep into the historical transactional data, allowing for accurate sales volume forecasts, pricing impact assessments, and strategic pricing recommendations. This comprehensive dataset serves as a valuable resource for understanding and optimizing sales performance in the UK grocery retail sector.**
